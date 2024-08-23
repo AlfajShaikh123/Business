@@ -25,13 +25,13 @@ export function Footer() {
           <Typography variant="h5" className="mb-6 text-white">
           AskExperts
           </Typography>
-          <div className="grid grid-cols-3 justify-between gap-4">
+          <div className="grid grid-cols-3 justify-between md:gap-4  ">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
                 <Typography
                   variant="small"
                   color="blue-gray"
-                  className="mb-3 opacity-40 text-white text-2xl font-bold"
+                  className="mb-3 opacity-40 text-white md:text-2xl  font-bold"
                 >
                   {title}
                 </Typography>
@@ -41,7 +41,7 @@ export function Footer() {
                       as="a"
                       href="#"
                       color="gray"
-                      className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
+                      className="py-1.5 font-normal transition-colors hover:text-red-800 text-white text-sm "
                     >
                       {link}
                     </Typography>

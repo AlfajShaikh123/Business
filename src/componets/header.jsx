@@ -84,6 +84,19 @@ function Header() {
                     Pages
                 </a>
             </Typography>
+            <NavLink to={"about"}>
+            <Typography
+                as="li"
+                variant="small"
+                color="blue-gray"
+                className="p-1 font-medium text-white text-lg hover:text-green-300"
+            >
+
+                <a href="#" className="flex items-center">
+                    About us
+                </a>
+            </Typography>
+            </NavLink>
             <Typography
                 as="li"
                 variant="small"
@@ -103,7 +116,7 @@ function Header() {
         <div className=" w-full z-40">
                 <div className="bg-black p-3  flex justify-between flex-grow">
                     <div className="flex gap-5">
-                        <i class="fa fa-clock-o text-yellow-400" aria-hidden="true"></i> <p className="text-white ms-5">Monday - Friday8AM - 9PM </p>
+                        <i class="fa fa-clock-o text-yellow-400" aria-hidden="true"></i> <p className="text-white ms-5">Monday - Friday 8 AM - 9 PM </p>
                     </div>
 
                     <div className="flex gap-5">

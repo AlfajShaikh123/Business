@@ -7,6 +7,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Home from './componets/home.jsx';
 import Service from './componets/service.jsx';
 import ServicePage from './componets/SinglePage/servicePage.jsx';
+import About from './componets/aboutus.jsx';
 
 
 const router=createBrowserRouter(
@@ -15,6 +16,7 @@ const router=createBrowserRouter(
       <Route path='' element={<Home/>}/>
       <Route path='/service' element={<Service/>}/>
       <Route path='/service/servicePage' element={<ServicePage/>}/>
+      <Route path='about' element={<About/>}/>
     </Route>
   )
 )

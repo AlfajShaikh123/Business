@@ -1,3 +1,4 @@
+
 import Header from "./header"
 import {
     Card,
@@ -20,7 +21,7 @@ import {
     CreditCardIcon,
     LockClosedIcon,
 } from "@heroicons/react/24/solid";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 function formatCardNumber(value) {
@@ -55,7 +56,7 @@ function Service() {
             icon: "https://cdn-icons-png.flaticon.com/512/12451/12451528.png",
             title: "Audit & Evalution",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reprehenderit, laudantium ad eligendi aliquid voluptatem voluptatum vitae asperiores dolore itaque.",
-            navLink:"servicePage"
+            navLink: "servicePage"
         },
         {
             icon: "https://p7.hiclipart.com/preview/677/191/799/budget-finance-financial-plan-accounting-investment-others.jpg",
@@ -125,17 +126,20 @@ function Service() {
 
     return (<>
         <div className="">
-           
 
 
+            {/* Banner */}
             <div className="relative md:top-16 top-32">
-                <img src="https://s3-alpha-sig.figma.com/img/9c82/f7b3/93ed35f06ea01dc5653cd432d8a5502d?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=o4BMsHdo~P09pgMzdUljnR4MRUZ5Bxb5OrE8MHnhEAGYiBULgtbFGXoK17~emfEFy4j2bPRxLjrdErsRd1xswFNk5IhAyBq4lnY4MYP5rTkBRswLlv-0v~ODWSf7j5wWT9YqTgPWdYUSHvxhkFw5LembZTTmflJ7EgyzOksihGnGnvgeyHuSVgPYazykw9~6dalPUJEPHir4DXQtLJeBCQ5m4E4uyEu-zIusG1L5rFVZgLqxk6nKJQU5ShrDwIo6xRJfz11tpseJynVHSR28feUf1Ftr4kiOfEuFcf9kExHsX7NWCpaO424P5WRY8Bt9MzjWY0JC3GEbyYJWDX6XUA__" className="w-[1983.86px] max-h-[550px]" alt="" />
+                <img src="https://s3-alpha-sig.figma.com/img/9c82/f7b3/93ed35f06ea01dc5653cd432d8a5502d?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=o4BMsHdo~P09pgMzdUljnR4MRUZ5Bxb5OrE8MHnhEAGYiBULgtbFGXoK17~emfEFy4j2bPRxLjrdErsRd1xswFNk5IhAyBq4lnY4MYP5rTkBRswLlv-0v~ODWSf7j5wWT9YqTgPWdYUSHvxhkFw5LembZTTmflJ7EgyzOksihGnGnvgeyHuSVgPYazykw9~6dalPUJEPHir4DXQtLJeBCQ5m4E4uyEu-zIusG1L5rFVZgLqxk6nKJQU5ShrDwIo6xRJfz11tpseJynVHSR28feUf1Ftr4kiOfEuFcf9kExHsX7NWCpaO424P5WRY8Bt9MzjWY0JC3GEbyYJWDX6XUA__" className="md:w-[1983.86px] md:h-[650px] h-[350px]" alt="" />
 
-                <div className="absolute inset-0 md:mt-28 md:w-[30%]  mt-10 md:ms-28 ">
-                    <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg  flex-wrap   overflow-hidden">
-                    <p className="bg-yellow-800 font-bold text-center p-1 rounded-full">S E R V I C E S</p>
-                        <h1 className="text-3xl font-bold text-gray-800 flex flex-grow mt-5">Creative Services For Boost Your Business Growth</h1>
-                        
+                <div className="absolute inset-0 md:mt-28 md:w-[25%]  mt-10 md:ms-28 ">
+                    <div className="md:bg-white bg-opacity-80 p-8 rounded-lg shadow-lg  flex-wrap   overflow-hidden  ">
+                        <h1 className="text-3xl font-bold md:text-gray-800 text-black   flex flex-grow">Your Small business <br /> Growth advisors</h1>
+                        <p className="md:text-gray-600 mt-2 text-black">
+                            This is some card data that appears in front of the image. You can add
+                            anything here, like buttons or text.
+                        </p>
+                        <Button className="mt-3 rounded-full">Our Services</Button>
                     </div>
 
                 </div>
@@ -144,22 +148,29 @@ function Service() {
             <div className="flex justify-center">
                 <img src="src\assets\images\image.JPG" className="h-24" alt="" />
             </div>
-           
+            {/* About us card */}
+
 
             {/* Services */}
-            <div className="space-y-4 flex flex-col  justify-center items-center mt-5  bg-gray-300 p-10">
-                <p className="bg-green-900 text-center p-2 rounded-xl w-[10%]">SERVICES</p>
-                <p className="text-center font-bold text-2xl">Get Control Over Your Business I take <br /> your finance to next level</p>
+            <div className="space-y-4 flex flex-col  justify-center items-center mt-5  bg-gray-300 p-10 ">
+                <div className="">
+                    <p className="bg-green-800 rounded-full p-2 font-bold text-center  m-auto md:ml-0  ">Service</p>
+                </div>
 
-                <div className="grid md:grid-flow-row-2 md:grid-cols-3 p-5 gap-5 m-42">
+                <div className="text-center font-bold text-2xl m-14">
+                    <p>Get Control Over Your Business I take <br /> your finance to next level</p>
+                </div>
+
+
+                <div className="grid md:grid-flow-row-2 md:grid-cols-3 gap-5 ">
                     {serviceData.map((item) => (
-                        <Link to={item.navLink}>
-                        <div className="bg-gray-400 p-10 rounded-xl hover:bg-black hover:text-white cursor-pointer space-y-3">
-                            <img src={item.icon} alt="" className="h-14" />
-                            <h1 className="font-bold text-lg">{item.title}</h1>
-                            <p>{item.description}</p>
-                        </div>
-                        </Link>
+                        <NavLink to={item.navLink}>
+                            <div className="bg-gray-400 p-10 rounded-xl hover:bg-black hover:text-white cursor-pointer space-y-3  ">
+                                <img src={item.icon} alt="" className="h-14" />
+                                <h1 className="font-bold text-lg">{item.title}</h1>
+                                <p>{item.description}</p>
+                            </div>
+                        </NavLink>
                     ))}
                 </div>
 
@@ -168,32 +179,38 @@ function Service() {
 
             {/* process */}
 
-            <div className="flex justify-center flex-col items-center md:flex-row mt-10 gap-7" >
-                <div>
-                    <img src="src\assets\images\imageCard2.JPG" />
+            <div className="flex justify-center flex-col items-center md:flex-row mt-10 gap-7 p-5" >
+                <div className="">
+                    <img src="src\assets\images\imageCard2.JPG" className="" />
                 </div>
 
-                <div className="w-[30%]  flex flex-col items-center justify-center space-y-4">
-                    <p className="bg-yellow-800 font-bold text-center p-3 rounded-full">P R O C E S S</p>
-                    <div className=" justify-around ">
-                    <h1 className="font-bold text-3xl">Our Consulting Service Development</h1>
-                    {
-                        processData.map((item) => (
-                            <div className="">
-                                <div className="flex items-center gap-2 md:flex-row ">
-                                    <p><img src={item.icon} className="h-5" /></p>
-                                    <p className="font-semibold">{item.title}</p>
-                                </div>
-                                <div>
-                                    <p className="text-gray-600 ms-10">  {item.discription}</p>
-                                </div>
-                            </div>
-
-
-                        ))
-                    }
+                <div className=" flex flex-col items-center justify-center space-y-1  ">
+                    <div className="bg-green-800 rounded-full p-2 font-bold text-center w-[50%] md:w-[10%] m-auto md:ml-0 md:m-auto ">
+                        <p >PROCESS</p>
                     </div>
-                    
+
+                    <div className=" justify-around ">
+                        <div className="font-bold md:text-3xl text-xl text-center m-5">
+                            <h1>Our Consulting Service Development</h1>
+                        </div>
+
+                        {
+                            processData.map((item) => (
+                                <div className="md:space-y-3 space-y-2 text-justify p-2">
+                                    <div className="flex items-center gap-2 md:flex-row mt-5  ">
+                                        <p><img src={item.icon} className="h-5" /></p>
+                                        <p className="font-semibold">{item.title}</p>
+                                    </div>
+                                    <div>
+                                        <p className="text-gray-600 ms-10">  {item.discription}</p>
+                                    </div>
+                                </div>
+
+
+                            ))
+                        }
+                    </div>
+
 
                 </div>
 
@@ -201,13 +218,16 @@ function Service() {
 
             {/* Pricing */}
 
-            <div className="space-y-7 bg-gray-300  p-10">
-                <p className="bg-green-800 rounded-full text-center font-bold p-2    ">P R I C I N G</p>
-                <h1 className="text-3xl font-bold text-center">Our Pricing Plan</h1>
-                <div className="md:grid md:grid-rows-2 md:grid-cols-3 gap-5 flex flex-col   p-5   ">
+            <div className="space-y-7 bg-gray-300  p-5 md:h-[800px] ">
+                <div className="bg-green-800 rounded-full p-2 font-bold text-center  m-auto md:ml-0 md:m-auto ">
+                    <p >PRICING</p>
+                </div>
+
+                <h1 className="md:text-3xl text-2xl font-bold text-center">Our Pricing Plan</h1>
+                <div className="md:grid md:grid-rows-2 md:grid-cols-3 gap-5 flex flex-col">
                     {
                         pricingData.map((item) => (
-                            <div className="bg-white p-5 rounded-xl shadow-2xl">
+                            <div className="bg-white p-5 rounded-xl shadow-2xl ">
                                 <div className="bg-card_color text-white rounded-xl p-5 space-y-3 ">
                                     <p className="font-bold text-xl">{item.plan}</p>
                                     <p>{item.description}</p>
@@ -255,14 +275,20 @@ function Service() {
             </div>
 
             {/* Process */}
-            <div className="flex gap-5 m-10 justify-center md:flex-row flex-col items-center">
-                <div className="space-y-7 w-[50%]">
-                    <p className="bg-yellow-800 rounded-full text-center font-bold p-2   ">P R O C E S S</p>
-                    <h1 className="text-3xl font-bold ">Contact Us. It’s Easy.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nihil molestiae inventore blanditiis culpa harum magnam exercitationem. Ducimus, libero possimus.</p>
+            <div className="flex gap-5 p-7  md:flex-row flex-col w-full ">
+                <div className="space-y-7  md:w-[50%]  m-3">
+                    <div className="bg-yellow-800 rounded-full text-center font-bold p-2 md:w-[50%]">
+                        <p>P R O C E S S</p>
+                    </div>
+
+                    <h1 className="md:text-3xl text-2xl font-bold ">Contact Us. It’s Easy.</h1>
+                    <div className="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nihil molestiae inventore blanditiis culpa harum magnam exercitationem. Ducimus, libero possimus.</p>
+                    </div>
+
 
                     <div className="space-y-16">
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-center  gap-2">
                             <div>
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBP_CgL5RVgtqWSoeMihZRCm2zzvBeEXJVUfsa9Z8aXY3Xw1ZQJd1PrXLHAVdAvWeI2so&usqp=CAU" className="h-10" alt="" />
                             </div>
@@ -296,11 +322,11 @@ function Service() {
                 </div>
 
                 <div>
-                    <Card color="transparent" shadow={false}>
+                    <Card color="transparent" shadow={false} className="m-5">
 
-                        <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 grid">
+                        <form className="mt-8 mb-2 w-80 max-w-screen-lg  grid">
                             <div>
-                                
+
                             </div>
                             <div className="mb-1 flex flex-col  gap-6">
                                 <Typography variant="h6" color="blue-gray" className="-mb-3">
@@ -351,11 +377,11 @@ function Service() {
                                     }}
                                 />
                             </div>
-                           
+
                             <Button className="mt-6" fullWidth>
                                 Send Message
                             </Button>
-                           
+
                         </form>
                     </Card>
                 </div>
