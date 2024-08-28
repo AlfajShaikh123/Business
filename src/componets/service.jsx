@@ -133,7 +133,7 @@ function Service() {
                 <img src="https://s3-alpha-sig.figma.com/img/9c82/f7b3/93ed35f06ea01dc5653cd432d8a5502d?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=o4BMsHdo~P09pgMzdUljnR4MRUZ5Bxb5OrE8MHnhEAGYiBULgtbFGXoK17~emfEFy4j2bPRxLjrdErsRd1xswFNk5IhAyBq4lnY4MYP5rTkBRswLlv-0v~ODWSf7j5wWT9YqTgPWdYUSHvxhkFw5LembZTTmflJ7EgyzOksihGnGnvgeyHuSVgPYazykw9~6dalPUJEPHir4DXQtLJeBCQ5m4E4uyEu-zIusG1L5rFVZgLqxk6nKJQU5ShrDwIo6xRJfz11tpseJynVHSR28feUf1Ftr4kiOfEuFcf9kExHsX7NWCpaO424P5WRY8Bt9MzjWY0JC3GEbyYJWDX6XUA__" className="md:w-[1983.86px] md:h-[650px] h-[350px]" alt="" />
 
                 <div className="absolute inset-0 md:mt-28 md:w-[25%]  mt-10 md:ms-28 ">
-                    <div className="md:bg-white bg-opacity-80 p-8 rounded-lg shadow-lg  flex-wrap   overflow-hidden  ">
+                    <div className="md:bg-white bg-opacity-80 p-8 rounded-lg shadow-lg  flex-wrap   overflow-hidden bg-gray-400  ">
                         <h1 className="text-3xl font-bold md:text-gray-800 text-black   flex flex-grow">Your Small business <br /> Growth advisors</h1>
                         <p className="md:text-gray-600 mt-2 text-black">
                             This is some card data that appears in front of the image. You can add
@@ -322,7 +322,7 @@ function Service() {
                 </div>
 
                 <div>
-                    <Card color="transparent" shadow={false} className="m-5">
+                    <Card color="transparent" shadow={false} className="">
 
                         <form className="mt-8 mb-2 w-80 max-w-screen-lg  grid">
                             <div>

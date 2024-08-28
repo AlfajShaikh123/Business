@@ -8,6 +8,11 @@ import Home from './componets/home.jsx';
 import Service from './componets/service.jsx';
 import ServicePage from './componets/SinglePage/servicePage.jsx';
 import About from './componets/aboutus.jsx';
+import Teams from './componets/teams.jsx';
+import TeamSingle from './componets/TeamsSinglePage/teamSingle.jsx';
+import Blog from './componets/blog.jsx';
+import Contact from './componets/contact.jsx';
+import BlogSingle from './componets/blogSingle/blogSingle.jsx';
 
 
 const router=createBrowserRouter(
@@ -17,6 +22,11 @@ const router=createBrowserRouter(
       <Route path='/service' element={<Service/>}/>
       <Route path='/service/servicePage' element={<ServicePage/>}/>
       <Route path='about' element={<About/>}/>
+      <Route path='/teams' element={<Teams/>}/>
+      <Route path='/teams/singlePage' element={<TeamSingle/>}/>
+      <Route path='blog' element={<Blog/>}/>
+      <Route path='contact' element={<Contact/>}/>
+      <Route path='/blog/blogsingle' element={<BlogSingle/>}/>
     </Route>
   )
 )

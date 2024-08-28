@@ -29,16 +29,18 @@ function Header() {
 
     const navList = (
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-medium text-white text-lg hover:text-green-300"
-            >
-                <a href="#" className="flex items-center">
-                    Home
-                </a>
-            </Typography>
+            <NavLink to={''}>
+                <Typography
+                    as="li"
+                    variant="small"
+                    color="blue-gray"
+                    className="p-1 font-medium text-white text-lg hover:text-green-300"
+                >
+                    <a href="#" className="flex items-center">
+                        Home
+                    </a>
+                </Typography>
+            </NavLink>
             <Typography
                 as="li"
                 variant="small"
@@ -51,29 +53,30 @@ function Header() {
             </Typography>
 
             <NavLink to={"service"}>
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-medium text-white text-lg hover:text-green-300"
-            >
+                <Typography
+                    as="li"
+                    variant="small"
+                    color="blue-gray"
+                    className="p-1 font-medium text-white text-lg hover:text-green-300"
+                >
 
-                <a href="#" className="flex items-center">
-                    Services
-                </a>
-            </Typography>
+                    <a href="#" className="flex items-center">
+                        Services
+                    </a>
+                </Typography>
             </NavLink>
-            
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-medium text-white text-lg hover:text-green-300"
-            >
-                <a href="#" className="flex items-center">
-                    Work
-                </a>
-            </Typography>
+            <NavLink to={"teams"}>
+                <Typography
+                    as="li"
+                    variant="small"
+                    color="blue-gray"
+                    className="p-1 font-medium text-white text-lg hover:text-green-300"
+                >
+                    <a href="#" className="flex items-center">
+                        Work
+                    </a>
+                </Typography>
+            </NavLink>
             <Typography
                 as="li"
                 variant="small"
@@ -85,18 +88,20 @@ function Header() {
                 </a>
             </Typography>
             <NavLink to={"about"}>
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-medium text-white text-lg hover:text-green-300"
-            >
+                <Typography
+                    as="li"
+                    variant="small"
+                    color="blue-gray"
+                    className="p-1 font-medium text-white text-lg hover:text-green-300"
+                >
 
-                <a href="#" className="flex items-center">
-                    About us
-                </a>
-            </Typography>
+                    <a href="#" className="flex items-center">
+                        About us
+                    </a>
+                </Typography>
             </NavLink>
+
+            <NavLink to={'contact'}>
             <Typography
                 as="li"
                 variant="small"
@@ -107,13 +112,27 @@ function Header() {
                     Contact
                 </a>
             </Typography>
+            </NavLink>
+            <NavLink to={"blog"}>
+                <Typography
+                    as="li"
+                    variant="small"
+                    color="blue-gray"
+                    className="p-1 font-medium text-white text-lg hover:text-green-300"
+                >
+
+                    <a href="#" className="flex items-center">
+                        Blog
+                    </a>
+                </Typography>
+            </NavLink>
         </ul>
     );
 
 
     return (<>
         <div className="w-full fixed z-20 ">
-        <div className=" w-full z-40">
+            <div className=" w-full z-40">
                 <div className="bg-black p-3  flex justify-between flex-grow">
                     <div className="flex gap-5">
                         <i class="fa fa-clock-o text-yellow-400" aria-hidden="true"></i> <p className="text-white ms-5">Monday - Friday 8 AM - 9 PM </p>

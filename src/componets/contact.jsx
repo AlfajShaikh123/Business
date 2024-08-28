@@ -25,7 +25,7 @@ import { Link, NavLink } from "react-router-dom";
 
 
 
-function About() {
+function Contact() {
 
     const teamData = [{ image: "https://tbcdn.talentbrew.com/company/430/v2_0_US/img/profile-andres.jpg", name: "Sarah Jasmin", discription: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, voluptatum!" },
     { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpWXDkQYlR_Jmjn0yuU6UI9SyFDP9L8MHwfA&s", name: "Sarah Jasmin", discription: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, voluptatum!" },
@@ -104,9 +104,9 @@ function About() {
                 <img src="https://s3-alpha-sig.figma.com/img/9c82/f7b3/93ed35f06ea01dc5653cd432d8a5502d?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=o4BMsHdo~P09pgMzdUljnR4MRUZ5Bxb5OrE8MHnhEAGYiBULgtbFGXoK17~emfEFy4j2bPRxLjrdErsRd1xswFNk5IhAyBq4lnY4MYP5rTkBRswLlv-0v~ODWSf7j5wWT9YqTgPWdYUSHvxhkFw5LembZTTmflJ7EgyzOksihGnGnvgeyHuSVgPYazykw9~6dalPUJEPHir4DXQtLJeBCQ5m4E4uyEu-zIusG1L5rFVZgLqxk6nKJQU5ShrDwIo6xRJfz11tpseJynVHSR28feUf1Ftr4kiOfEuFcf9kExHsX7NWCpaO424P5WRY8Bt9MzjWY0JC3GEbyYJWDX6XUA__" className="md:w-[1983.86px] md:h-[650px] h-[350px]" alt="" />
 
                 <div className="absolute inset-0 md:mt-28 md:w-[25%]  mt-10 md:ms-28 ">
-                    <div className="md:bg-white bg-opacity-80 p-8 rounded-lg shadow-lg  flex-wrap   overflow-hidden bg-gray-400  ">
-                        <p className="bg-yellow-800 rounded-full mb-2 text-center w-[50%]">SERVICES</p>
-                        <h1 className="text-3xl font-bold md:text-gray-800 text-black   flex flex-grow">Your Small business <br /> Growth advisors</h1>
+                    <div className="md:bg-white bg-opacity-80 p-8 rounded-lg shadow-lg  flex-wrap   overflow-hidden  bg-gray-400 ">
+                        <p className="bg-yellow-800 rounded-full mb-2 text-center w-[50%]">CONTACT US</p>
+                        <h1 className="text-3xl font-bold md:text-gray-800 text-black   flex flex-grow">Feel Free To Reach Us <br /> Growth advisors</h1>
 
                     </div>
 
@@ -114,13 +114,18 @@ function About() {
             </div>
 
 
-            {/* About */}
+
+
+
+
+
+            {/* LETS TALK */}
             <div>
-                <div className="flex gap-5 md:mt-24 mt-40  justify-center md:flex-row flex-col items-center  ">
+                <div className="flex gap-5 md:mt-24 mt-40  justify-center md:flex-row-reverse flex-col items-center  ">
                     <div className="space-y-7 md:w-[50%] p-5">
-                        <p className="bg-yellow-800 rounded-full text-center font-bold p-2 w-[50%]  ">Our Vision</p>
-                        <h1 className="text-3xl font-bold ">About our Consuting Agency Team</h1>
-                        <p className="text-green-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, minima. In nihil molestiae inventore </p>
+                        <p className="bg-green-800 rounded-full text-center font-bold p-2 w-[50%]  ">LETS TALK</p>
+                        <h1 className="text-3xl font-bold ">Get In Touch With Us</h1>
+                        <p className="text-green-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, quibusdam. saepe.</p>
 
                         <div className="space-y-10 ">
@@ -160,124 +165,139 @@ function About() {
 
                 </div>
 
-                <div className="md:flex md:justify-center gap-10 grid grid-rows-2 grid-cols-2 p-5 ">
-                    <div className="flex flex-col items-center ">
-                        <p className="font-bold text-lg">1128 +</p>
-                        <p className="text-sm">Successfull Work</p>
-                    </div>
-                    <div className="flex flex-col items-center " >
-                        <p className="font-bold text-lg">908 +</p>
-                        <p className="text-sm">Team Membar</p>
-                    </div>
-                    <div className="flex flex-col items-center ">
-                        <p className="font-bold text-lg">258 +</p>
-                        <p className="text-sm">Happy Customer</p>
-                    </div>
-                    <div className="flex flex-col items-center ">
-                        <p className="font-bold text-lg">564 +</p>
-                        <p className="text-sm">Creative ideas</p>
-                    </div>
-                </div>
+               
             </div>
 
-            {/* Service */}
-            <div className="bg-gray-300 md:p-10 p-5 mt-5 ">
-                <div className="flex justify-between ">
-                    <div className="space-y-4">
-                        <p className="bg-yellow-800 text-sm p-1 rounded-full text-center md:w-[50%] me-2">GROWING WITH OUR CLIENTS </p>
-                        <p className="text-xl font-bold">Our core values and principle</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, modi.</p>
-                    </div>
-
-                    <div>
-                        <Button>Get in touch</Button>
-                    </div>
-
-                </div>
-                <div className="space-y-4 flex flex-col  justify-center items-center mt-5 ">
-                    <div className="relative w-full">
-                        <div className="overflow-auto no-scrollbar">
-                            <div
-                                className="flex transition-transform duration-300"
-                                style={{ transform: `translateX(-${currentIndex * cardWidth}px)` }}
-                            >
-                                {cards.map((card, index) => (
-                                    <div key={index} className="min-w-[250px] mr-4 shadow-xl">
-                                        <div>
-                                            <img src={card.image} alt="" className="w-[360px]" />
-                                        </div>
-                                        <div className="p-4 bg-white shadow space-y-2">
-                                            <h2 className="text-lg font-bold">{card.title}</h2>
-                                            <p className="text-gray-600">{card.description}</p>
-                                            <Button className="">Learn More</Button>
-                                        </div>
-
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-
-                        {/* <button
-                            onClick={handlePrev}
-                            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded"
-                            disabled={currentIndex === 0}
-                        >
-                            Prev
-                        </button>
-
-                        <button
-                            onClick={handleNext}
-                            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded"
-                            disabled={currentIndex === maxIndex}
-                        >
-                            Next
-                        </button> */}
-                    </div>
 
 
-                </div>
-            </div>
+
+
+          
             {/* our history */}
-            <div className="bg-black mt-14 p-20 space-y-3">
-                <p className="bg-green-800 p-1 font-semibold text-center rounded-full">OUR HISTORY</p>
-                <p className="text-white text-center mt-3 text-2xl font-bold">Strategy for Every Stage in <br /> the Client's Journey</p>
+            <div className=" mt-14 p-20 space-y-3">
+                
                 <div className="flex justify-center">
-                    <img src="src\assets\images\vediopic.JPG" alt="" />
+                    <img src="src\assets\images\singleteams.JPG" alt="" />
                 </div>
 
             </div>
 
-            {/* Our team */}
+           
+             {/* Process */}
+             <div className="flex gap-5 p-7  md:flex-row flex-col w-full justify-center ">
+                <div className="space-y-7  md:w-[50%]  m-3 ">
+                    <div  className="bg-yellow-800 rounded-full text-center font-bold p-2 md:w-[50%]">
+                    <p>P R O C E S S</p>
+                    </div>
+                  
+                    <h1 className="md:text-3xl text-2xl font-bold ">Contact Us. It’s Easy.</h1>
+                    <div className="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nihil molestiae inventore blanditiis culpa harum magnam exercitationem. Ducimus, libero possimus.</p>
+                    </div>
+                   
 
-            <div className="mt-14 flex flex-col justify-center items-center space-y-5 p-5">
-
-                <p className="bg-yellow-800 p-1 text-sm text-center rounded-full w-[50%]">OUR TEAM</p>
-                <p className="font-bold text-xl">We Chapion the bold to achive the extraordinary</p>
-                <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur saepe maiores corrupti tempora provident repudiandae laudantium magnam voluptatem suscipit eveniet.</p>
-
-                <div className="flex md:flex-row flex-col  justify-center gap-5  ">
-                    {teamData.map((item) => (
-                        <div className="flex flex-col justify-center items-center w-[250px] ">
-                            <img src={item.image} alt="" className="h-[200px] w-[200px] rounded-xl" />
-                            <p className="font-bold">{item.name}</p>
-                            <p className="text-center">{item.discription}</p>
-                            <div className="flex gap-3">
-                                <p>I</p>
-                                <p>F</p>
-                                <p>T</p>
+                    <div className="space-y-16">
+                        <div className="flex items-center  gap-2">
+                            <div>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBP_CgL5RVgtqWSoeMihZRCm2zzvBeEXJVUfsa9Z8aXY3Xw1ZQJd1PrXLHAVdAvWeI2so&usqp=CAU" className="h-10" alt="" />
+                            </div>
+                            <div>
+                                <p className="">Call Today</p>
+                                <p className="font-bold text-sm">+1800 100 900</p>
                             </div>
                         </div>
-                    ))}
+
+                        <div className="flex items-center gap-2">
+                            <div>
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/013/468/392/small/clock-time-line-icon-png.png" className="h-10" alt="" />
+                            </div>
+                            <div>
+                                <p className="">Monday to Friday</p>
+                                <p className="font-bold text-sm">9AM - 5PM </p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-2">
+                            <div>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0kBSNFYW5uvrkn1Gpr6kIloe9Eb0D1zUW2A&s" className="h-10" alt="" />
+                            </div>
+                            <div>
+                                <p className="">USA Office</p>
+                                <p className="font-bold text-sm">195 Devonshire St Boston, MA 02110</p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-            </div>
 
-            {/* Book Now */}
-            <div className="flex justify-center mt-14 mb-10">
-                <img src="src\assets\images\bookImage.JPG" className="h-[350px]" alt="" />
+                <div>
+                    <Card color="transparent" shadow={false} className="">
+
+                        <form className="mt-8 mb-2 w-80 max-w-screen-lg  grid">
+                            <div>
+
+                            </div>
+                            <div className="mb-1 flex flex-col  gap-6">
+                                <Typography variant="h6" color="blue-gray" className="-mb-3">
+                                    Full name
+                                </Typography>
+                                <Input
+                                    size="lg"
+                                    placeholder="name@mail.com"
+                                    className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                                    labelProps={{
+                                        className: "before:content-none after:content-none",
+                                    }}
+                                />
+                                <Typography variant="h6" color="blue-gray" className="-mb-3">
+                                    Email
+                                </Typography>
+                                <Input
+                                    size="lg"
+                                    placeholder="name@mail.com"
+                                    className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                                    labelProps={{
+                                        className: "before:content-none after:content-none",
+                                    }}
+                                />
+                                <Typography variant="h6" color="blue-gray" className="-mb-3">
+                                    Phone
+                                </Typography>
+                                <Input
+                                    type="text"
+                                    size="lg"
+                                    placeholder="********"
+                                    className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                                    labelProps={{
+                                        className: "before:content-none after:content-none",
+                                    }}
+                                />
+
+                                <Typography variant="h6" color="blue-gray" className="-mb-3">
+                                    Company (optional)
+                                </Typography>
+                                <Input
+                                    type="text"
+                                    size="lg"
+                                    placeholder="********"
+                                    className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                                    labelProps={{
+                                        className: "before:content-none after:content-none",
+                                    }}
+                                />
+                            </div>
+
+                            <Button className="mt-6" fullWidth>
+                                Send Message
+                            </Button>
+
+                        </form>
+                    </Card>
+                </div>
+
             </div>
         </div>
     </>)
 }
 
-export default About
+export default Contact

@@ -268,12 +268,12 @@ function ServicePage() {
                         <img src="https://cdn-icons-png.flaticon.com/512/109/109618.png" alt="" className="h-8 bg-gray-600 p-2 rounded-full hover:bg-yellow-700" /><img src="https://cdn-icons-png.flaticon.com/512/109/109617.png" className="h-8 bg-gray-600 p-2 rounded-full hover:bg-yellow-700" alt="" />
                     </div>
                 </div>
-                <div className="space-y-4 flex flex-col  justify-center items-center ">
+                <div className="space-y-4 flex flex-col   items-center overflow-auto no-scrollbar  " >
 
 
-                    <div className="grid md:flex  md: p-5 gap-5 m-42">
+                    <div className="flex  md:p-5 gap-5 m-42 ">
                         {serviceData.map((item) => (
-                            <div className="bg-gray-400 p-10 rounded-xl hover:bg-black hover:text-white cursor-pointer space-y-3">
+                            <div className="bg-gray-400 p-10 rounded-xl hover:bg-black   hover:text-white cursor-pointer space-y-3 w-[450px]">
                                 <img src={item.icon} alt="" className="h-14" />
                                 <h1 className="font-bold text-lg">{item.title}</h1>
                                 <p>{item.description}</p>
