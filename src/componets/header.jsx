@@ -87,7 +87,7 @@ function Header() {
                     Pages
                 </a>
             </Typography>
-            <NavLink to={"about"}>
+            <NavLink to={"abou"}>
                 <Typography
                     as="li"
                     variant="small"

@@ -1,9 +1,11 @@
 import { Typography } from "@material-tailwind/react";
+import { NavLink } from "react-router-dom";
  
 const LINKS = [
   {
     title: "Product",
-    items: ["Overview", "Features", "Solutions", "Tutorials"],
+    navLink:"changelog",
+    items: ["Overview", "Features", "Solutions", "Tutorials","Change log"],
   },
   {
     title: "Company",
@@ -25,9 +27,11 @@ export function Footer() {
           <Typography variant="h5" className="mb-6 text-white">
           AskExperts
           </Typography>
-          <div className="grid grid-cols-3 justify-between md:gap-4  ">
-            {LINKS.map(({ title, items }) => (
+          <div className="grid grid-cols-3 justify-between md:gap-4 gap-10  ">
+            {LINKS.map(({ title, items,navLink }) => (
+
               <ul key={title}>
+                
                 <Typography
                   variant="small"
                   color="blue-gray"
@@ -37,6 +41,7 @@ export function Footer() {
                 </Typography>
                 {items.map((link) => (
                   <li key={link}>
+                    <NavLink to={navLink}>
                     <Typography
                       as="a"
                       href="#"
@@ -45,6 +50,7 @@ export function Footer() {
                     >
                       {link}
                     </Typography>
+                    </NavLink>
                   </li>
                 ))}
               </ul>

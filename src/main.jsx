@@ -13,6 +13,8 @@ import TeamSingle from './componets/TeamsSinglePage/teamSingle.jsx';
 import Blog from './componets/blog.jsx';
 import Contact from './componets/contact.jsx';
 import BlogSingle from './componets/blogSingle/blogSingle.jsx';
+import ErrorPage from './componets/errorPage.jsx';
+import ChangeLog from './componets/changeLog.jsx';
 
 
 const router=createBrowserRouter(
@@ -27,6 +29,10 @@ const router=createBrowserRouter(
       <Route path='blog' element={<Blog/>}/>
       <Route path='contact' element={<Contact/>}/>
       <Route path='/blog/blogsingle' element={<BlogSingle/>}/>
+
+      <Route path='changelog' element={<ChangeLog/>}/>
+      <Route path='*' element={<ErrorPage/>}/>
+      
     </Route>
   )
 )
