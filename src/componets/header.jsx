@@ -41,6 +41,8 @@ function Header() {
                     </a>
                 </Typography>
             </NavLink>
+
+            <NavLink to={"casestudy"}>
             <Typography
                 as="li"
                 variant="small"
@@ -51,6 +53,7 @@ function Header() {
                     Page
                 </a>
             </Typography>
+            </NavLink>
 
             <NavLink to={"service"}>
                 <Typography
@@ -77,16 +80,7 @@ function Header() {
                     </a>
                 </Typography>
             </NavLink>
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-medium text-white text-lg hover:text-green-300"
-            >
-                <a href="#" className="flex items-center">
-                    Pages
-                </a>
-            </Typography>
+           
             <NavLink to={"abou"}>
                 <Typography
                     as="li"

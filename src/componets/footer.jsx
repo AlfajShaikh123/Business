@@ -9,11 +9,14 @@ const LINKS = [
   },
   {
     title: "Company",
-    items: ["About us", "Careers", "Press", "News"],
+    navLink:"licence",
+  
+    items: ["About us", "Careers", "Press", "News","Licence"],
   },
   {
     title: "Address",
-    items: ["Blog", "Newsletter", "Events", "Help center"],
+    navLink:"protection",
+    items: ["Blog", "Newsletter", "Events", "Help center","Protection"],
   },
 ];
  
